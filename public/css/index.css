@@ -1,0 +1,397 @@
+.body-div{
+    position: relative;
+    width: 100%;
+    height: auto;
+    /*background-color: brown;*/
+}
+
+/*for header*/
+.header{
+    position: absolute;
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+    height: 76px;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+}
+
+/* Code for logo*/
+.header-logo{
+    position: absolute;
+    float: left;
+    width: 25%;
+    height: 100px;
+    
+
+}
+
+.header-logo img{
+    width: 60%;
+    align-content: center;
+    margin-left: 12%;
+    height: 76%;
+    
+}
+
+.header-menu{
+    float: right;
+	width: 100%;
+    height: 100%;                            /*------------------------------------------------------change---------------------------*/
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.header-menu a{
+    float: right;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 28px 16px;
+    text-decoration: none;
+    height: 100%;
+}
+
+/*for drop down*/
+.dropDown{
+	float: right;
+	overflow: hidden;
+}
+.drop-button{
+	background-color: brown;
+	color: white;
+	border: none;
+	font-size: 16px;
+	height: 76px;
+}
+.dropDown drop-button{
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+.header-menu a:hover, .dropDown:hover .drop-button{
+	background-color: red;
+}
+
+.dropDown-content{
+	display: none;
+	position: absolute;
+	min-width: 160px;
+    z-index: 1;
+    background-color: gray;
+}
+.dropDown-content a{
+	float: none;
+	padding: 9px 10px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.header-menu a:hover{
+    color: white;
+    text-decoration: none;       
+}
+.dropDown-content a:hover{
+	background-color: red;
+}
+
+.dropDown:hover .dropDown-content{
+	display: block;
+}
+
+/*Slider code start here*/
+.container{
+    position: absolute;
+    margin-top: 5%;
+    left: 0;
+    right: 0;
+}
+
+/*code for testimonial--------------------------------------------------------------*/
+
+.body-testimonial{
+    position: absolute;
+    width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 300px;
+    margin-top: 45%;
+    /*background-color: yellow;*/
+}
+
+.body-testimonial-container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonial-container-content{
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.testimonial-container-content img{
+    width: 100%;
+    height: 80%;
+}
+.testimonial-content{
+    text-align: center;
+}
+
+/*Code for logo menu link*/
+
+.container-logo-menu-link{
+    position: absolute;
+    width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 200px;
+    margin-top: 65%;
+    /*background-color:yellow;*/
+}
+
+.container-logo-menu-link-main{
+    width: 100%;
+    height: 64%;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+}
+.container-logo-me-li{
+    position: absolute;
+    float: left;
+    width: 25%;
+    height: 100px;
+}
+
+.container-logo-me-li img{
+    width: 60%;
+    align-content: center;
+    margin-left: 12%;
+    height: 100%;
+}
+
+
+.container-lo-menu-li{
+    position: absolute;
+    margin-left: 35%;
+    width: 30%;
+    height: 100%;
+}
+
+.container-lo-menu-li ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    /*background-color: #f1f1f1;*/
+}
+.container-lo-menu-li li a{
+    display: block;
+    color: blue;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.container-lo-menu-li li a:hover{
+    background-color: #555;
+    color: white;
+}
+
+.container-lo-me-link{
+    width: 100%;
+    height: 100%;
+    margin-left: 80%;
+}
+.container-lo-me-link a{
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}
+
+/*Code for sticky footer*/
+.sticky-footer{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+   background-color: gray;
+}
+.sticky-footer-container{
+    width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /*background-color: gray;*/
+}
+
+.copy-right{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.copy-right p{
+    padding: 6% 7%;
+}
+.footer-right-side{
+    margin-left: 60%;
+    width: 30%;
+    height: 100%;
+}
+.footer-right-side h5{
+    padding: 6% 0;
+}
+
+
+/*------------------------------------Here is code for regestration page-------------------------------------------------------------------*/
+.registration-body{
+    width: 100%;
+    height: 100%;
+    background-color: salmon;
+}
+.registration-body-width0{
+    width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #fff;
+}
+/*---------------------here is code for body------------------*/
+.registration-body-container{
+    width: 1200px;
+    height: auto;
+    position: absolute;
+    margin-top: 5%;
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.body-form-user{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.body-user-form-left{
+    width: 50%;
+    height: auto;
+    float: left;
+    border-right: 1px solid black;
+}
+
+.body-user-form-right{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+input[type=text]{
+    width: 70%;
+    margin: 5px;
+}
+
+select{
+    margin: 10px;
+    width: 34%;
+}
+input[type=email]{
+    width: 70%;
+    margin-left: 5px;
+    margin: 5px;
+}
+
+.registration-optional-texta{
+    width: 100%;
+    height: auto;
+    
+}
+textarea[id=feedback]{
+    width: 98%;
+    height: 120px;
+    margin-left: 5px;
+}
+.registration-submit-buttun{
+    width: 100%;
+
+}
+.registration-submit-buttun button{
+    float: right;
+    margin-right: 1%;
+}
+/*code for footer------------------------------------------------------------------------*/
+.container-logo-menu-link1{
+    position: absolute;
+    width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 200px;
+    margin-top: 39%;
+    /*background-color:yellow;*/
+}
+
+/*--------code for sticky footer for registration---------------*/
+.registration-sticky-footer{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+   background-color: gray;
+}
+.registration-sticky-footer-width0{
+    width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    
+}
+
+.registration-copy-right{
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.registraion-footer-right-side{
+    width: 17%;
+    height: auto;
+    margin-left: 83%;
+}
+
+
+/*-----------------------------------here is code for acordion-----------------------------------------------------------------------*/
+.accordion-body-div{
+    width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#accordion{
+    position: absolute;
+    margin-top: 4%;
+    width: 1200px;
+}
+
+

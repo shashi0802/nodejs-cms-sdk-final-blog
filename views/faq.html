@@ -1,0 +1,105 @@
+{% extends "layouts/default.html" %}
+{% block section %}
+<div id="accordion" class="faq-question">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    1. Tell me about yourself:
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                The most often asked question in interviews. You need to have a short statement prepared in your mind. Be careful that it does not sound rehearsed. Limit it to work-related items unless instructed otherwise. Talk about things you have done and jobs you have held that relate to the position you are interviewing for. Start with the item farthest back and work up to the present.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2. Why did you leave your last job?
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                Stay positive regardless of the circumstances. Never refer to a major problem with management and never speak ill of supervisors, co- workers or the organization. If you do, you will be the one looking bad. Keep smiling and talk about leaving for a positive reason such as an opportunity, a chance to do something special or other forward- looking reasons.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3. What experience do you have in this field?
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                Speak about specifics that relate to the position you are applying for. If you do not have specific experience, get as close as you can.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    4. Do you consider yourself successful?
+                </button>
+            </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+                You should always answer yes and briefly explain why. A good explanation is that you have set goals, and you have met some and are on track to achieve the others.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    5. What do co-workers say about you?
+                </button>
+            </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+                Be prepared with a quote or two from co-workers. Either a specific statement or a paraphrase will work. Jill Clark, a co-worker at Smith Company, always said I was the hardest workers she had ever known. It is as powerful as Jill having said it at the interview herself.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    6. What do you know about this organization?
+                </button>
+            </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+            <div class="card-body">
+                This question is one reason to do some research on the organization before the interview. Find out where they have been and where they are going. What are the current issues and who are the major players?
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingSeven">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    7. What have you done to improve your knowledge in the last year?
+                </button>
+            </h5>
+        </div>
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+            <div class="card-body">
+                Try to include improvement activities that relate to the job. A wide variety of activities can be mentioned as positive self-improvement. Have some good ones handy to mention.
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock section %}

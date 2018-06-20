@@ -1,0 +1,42 @@
+{% extends "layouts/default.html" %}
+
+{% block section %}
+    <!--Form-->
+    <div class="registration-form-container">
+        <form method="POST" onsubmit="return validateField()">
+            <h1>Send us a message.</h1>
+            <h5>Let us know how we can help you.</h5>
+            <div class="registration-left-container">
+                <h4>Your info</h4>
+                <input type="text" id="fname" placeholder="First name">
+                <input type="text" id="lname" placeholder="Last name">
+                <input type="email" id="email" placeholder="Work email">
+            </div>
+            <div class="registration-right-container">
+                <h4>Your Business</h4>
+                <input type="text" id="cname" placeholder="Company name">
+                <input type="text" id="jtitle" placeholder="Job title">
+                <select type="text" id="slbutype" aria-placeholder="Select business type">
+                    <option value="selectBusiness">Select business type</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="chemical">Chemical</option>
+                </select>
+                <select type="text" id="selecthelpType" aria-placeholder="Select help topic..">
+                    <option value="helpType">Select a help type..</option>
+                    <option value="generalInfo">General information</option>
+                    <option value="freeTrial">Free Trail</option>
+                    <option value="getDemo">Get a demo</option>
+                </select>
+            </div>
+            <div class="registration-optional-texta">
+                <textarea id="feedback" placeholder="To help us provide you with the fastest and most accurate response, please leave us a detailed message."></textarea>
+            </div>
+            <div class="registration-submit-buttun">
+                <button id="submit" type="submit">Submite</button>
+            </div>
+        </form>
+    </div>
+    <!--\.Form close-->
+
+{% endblock section %}
