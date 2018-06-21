@@ -7,7 +7,7 @@
             <!--First column-->
             <div class="col-md-4">
                 <a href="Index.html">
-                    <img src="../static/images/logo.png">
+                    <img src="{{data[1].entry.group.file.url}}"></img>
                 </div>
                 <!--/.First column-->
 
@@ -18,13 +18,13 @@
                     <h5 class="text-uppercase mb-4 mt-3 font-weight-bold"></h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="Index.html">Home</a>
+                            <a href="{{data[1].entry.group.footer_menu[0].menu.href}}">{{data[1].entry.group.footer_menu[0].menu.title}}</a>
                         </li>
                         <li>
-                            <a href="FAQ.html">FAQ</a>
+                            <a href="{{data[1].entry.group.footer_menu[1].menu.href}}">{{data[1].entry.group.footer_menu[1].menu.title}}</a>
                         </li>
                         <li>
-                            <a href="Registration.html">Contact Us</a>
+                            <a href="{{data[1].entry.group.footer_menu[2].menu.href}}">{{data[1].entry.group.footer_menu[2].menu.title}}</a>
                         </li>
                     </ul>
                 </div>
@@ -37,16 +37,16 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Google</a>
+                            <a href="{{data[1].entry.group.footer_social_media[0].social_media_menu.href}}">{{data[1].entry.group.footer_social_media[0].social_media_menu.title}}</a>
                         </li>
                         <li>
-                            <a href="#!">Facebook</a>
+                            <a href="{{data[1].entry.group.footer_social_media[1].social_media_menu.href}}">{{data[1].entry.group.footer_social_media[1].social_media_menu.title}}</a>
                         </li>
                         <li>
-                            <a href="#!">Youtube</a>
+                            <a href="{{data[1].entry.group.footer_social_media[2].social_media_menu.href}}">{{data[1].entry.group.footer_social_media[2].social_media_menu.title}}</a>
                         </li>
                         <li>
-                            <a href="#!">Instagram</a>
+                            <a href="{{data[1].entry.group.footer_social_media[3].social_media_menu.href}}">{{data[1].entry.group.footer_social_media[3].social_media_menu.title}}</a>
                         </li>
                     </ul>
                 </div>
@@ -60,17 +60,17 @@
         <div class="sticky-footer-main">
             <!--Copyright-->
             <div class="footer-copyright py-3 text-center">
-                © 2018 ContentStack. All rights reserved.
+                {{data[1].entry.sticky_footer.copy_right}}
             </div>
             <!--/.Copyright-->
             <!--privacy term and sitemap-->
             <div class="sticky-footer-right">
                 <h5>
-                    <a href="https://www.contentstack.com/privacy">Privacy</a>
+                    <a href="{{data[1].entry.sticky_footer.sticky_footer_link[0].href}}">{{data[1].entry.sticky_footer.sticky_footer_link[0].title}}</a>
                     |
-                    <a href="https://www.contentstack.com/terms-of-service">Terms</a>
+                    <a href="{{data[1].entry.sticky_footer.sticky_footer_link[1].href}}">{{data[1].entry.sticky_footer.sticky_footer_link[1].title}}</a>
                     |
-                    <a href="https://www.contentstack.com/sitemap">Sitemap</a>
+                    <a href="{{data[1].entry.sticky_footer.sticky_footer_link[2].href}}">{{data[1].entry.sticky_footer.sticky_footer_link[2].title}}</a>
                 </h5>
             </div>
         </div>

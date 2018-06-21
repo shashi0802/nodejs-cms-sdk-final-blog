@@ -3,8 +3,8 @@
         {# <a href="Index.html">
             <img src="../static/images/logo.png">
         </a> #}
-        <a href="{{data.entry.url}}">
-            <img src="{{data.entry.logo.url}}"></img>
+        <a href="{{data[0].entry.menu[0].link.href}}">
+            <img src="{{data[0].entry.logo.url}}"></img>
         </a>
     </div>
     <div class="body-menu">
@@ -12,21 +12,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{data.entry.menu[0].link.href}}">{{data.entry.menu[0].link.title}}</a>
+                        <a class="nav-link" href="{{data[0].entry.menu[0].link.href}}">{{data[0].entry.menu[0].link.title}}</a>
                             {# <span class="sr-only">(current)</span> #}
                         {# </a> #}
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{data.entry.menu[1].link.href}}">{{data.entry.menu[1].link.title}}</a>
+                        <a class="nav-link" href="{{data[0].entry.menu[1].link.href}}">{{data[0].entry.menu[1].link.title}}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Contact Us
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{data.entry.menu[2].sub_menu[0].href}}">{{data.entry.menu[2].sub_menu[0].title}}</a>
-                            <a class="dropdown-item" href="{{data.entry.menu[2].sub_menu[1].href}}">{{data.entry.menu[2].sub_menu[1].title}}</a>
-                            <a class="dropdown-item" href="{{data.entry.menu[2].sub_menu[2].href}}">{{data.entry.menu[2].sub_menu[2].title}}</a>
+                            <a class="dropdown-item" href="{{data[0].entry.menu[2].sub_menu[0].href}}">{{data[0].entry.menu[2].sub_menu[0].title}}</a>
+                            <a class="dropdown-item" href="{{data[0].entry.menu[2].sub_menu[1].href}}">{{data[0].entry.menu[2].sub_menu[1].title}}</a>
+                            <a class="dropdown-item" href="{{data[0].entry.menu[2].sub_menu[2].href}}">{{data[0].entry.menu[2].sub_menu[2].title}}</a>
                         </div>
                     </li>
                 </ul>

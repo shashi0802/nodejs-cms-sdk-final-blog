@@ -11,7 +11,7 @@
 }
 .registration-left-container{
     width: 45%;
-    height: 100%;
+    /* height: 100%; */
     float: left;
     
     border-right: 1px solid black
@@ -19,7 +19,7 @@
 }
 .registration-right-container{
     width: 100%;
-    height: 100%;  
+    /* height: 100%;   */
    
 }
 

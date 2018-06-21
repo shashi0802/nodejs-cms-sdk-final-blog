@@ -4,36 +4,36 @@
     <!--Form-->
     <div class="registration-form-container">
         <form method="POST" onsubmit="return validateField()">
-            <h1>Send us a message.</h1>
-            <h5>Let us know how we can help you.</h5>
+            <h1>{{data[2].entry.message_1}}</h1>
+            <h5>{{data[2].entry.message_2}}</h5>
             <div class="registration-left-container">
-                <h4>Your info</h4>
-                <input type="text" id="fname" placeholder="First name">
-                <input type="text" id="lname" placeholder="Last name">
-                <input type="email" id="email" placeholder="Work email">
+                <h4>{{data[2].entry.registration_form.message}}</h4>
+                <input type="text" id="fname" placeholder="{{data[2].entry.registration_form.first_name}}">
+                <input type="text" id="lname" placeholder="{{data[2].entry.registration_form.last_name}}">
+                <input type="email" id="email" placeholder="{{data[2].entry.registration_form.work_email}}">
             </div>
             <div class="registration-right-container">
-                <h4>Your Business</h4>
-                <input type="text" id="cname" placeholder="Company name">
-                <input type="text" id="jtitle" placeholder="Job title">
-                <select type="text" id="slbutype" aria-placeholder="Select business type">
-                    <option value="selectBusiness">Select business type</option>
-                    <option value="accounting">Accounting</option>
-                    <option value="agriculture">Agriculture</option>
-                    <option value="chemical">Chemical</option>
+                <h4>{{data[2].entry.business_detail.message}}</h4>
+                <input type="text" id="cname" placeholder="{{data[2].entry.business_detail.company_name}}">
+                <input type="text" id="jtitle" placeholder="{{data[2].entry.business_detail.job_title}}">
+                <select type="text" id="slbutype" aria-placeholder=" Select businesstype">
+                    <option value="selectBusiness">{{data[2].entry.business_detail.select_bussiness_type[0]}}</option>
+                    <option value="accounting">{{data[2].entry.business_detail.select_bussiness_type[1]}}</option>
+                    <option value="agriculture">{{data[2].entry.business_detail.select_bussiness_type[2]}}</option>
+                    <option value="chemical">{{data[2].entry.business_detail.select_bussiness_type[3]}}</option>
                 </select>
                 <select type="text" id="selecthelpType" aria-placeholder="Select help topic..">
-                    <option value="helpType">Select a help type..</option>
-                    <option value="generalInfo">General information</option>
-                    <option value="freeTrial">Free Trail</option>
-                    <option value="getDemo">Get a demo</option>
+                    <option value="helpType">{{data[2].entry.business_detail.select_help_topic_[0]}}</option>
+                    <option value="generalInfo">{{data[2].entry.business_detail.select_help_topic_[1]}}</option>
+                    <option value="freeTrial">{{data[2].entry.business_detail.select_help_topic_[2]}}</option>
+                    <option value="getDemo">{{data[2].entry.business_detail.select_help_topic_[3]}}</option>
                 </select>
             </div>
             <div class="registration-optional-texta">
-                <textarea id="feedback" placeholder="To help us provide you with the fastest and most accurate response, please leave us a detailed message."></textarea>
+                <textarea id="feedback" placeholder="{{data[2].entry.feedback.feedback}}"></textarea>
             </div>
             <div class="registration-submit-buttun">
-                <button id="submit" type="submit">Submite</button>
+                <button id="submit" type="submit">{{data[2].entry.business_detail.button.title}}</button>
             </div>
         </form>
     </div>
