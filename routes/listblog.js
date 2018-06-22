@@ -7,21 +7,18 @@ var Stack = require('../models/contentStack');
 router.get('/', (req, res) => {
 
   
-  const Query = Stack.ContentType('registration').Query();
+  const Query = Stack.ContentType('listblog').Query();
  
   Query
     .toJSON()
     .find()
     .spread(function success(data) {
       //console.log(entry.title)
-      res.render('registration',{entry:data[0]});
+      res.render('listblog',{entry:data[0]});
     }, function error(err) {
       // err object
     });
-  
-
-  // res.render('registration');
-  console.log("Hello nunjuks....! this is registration");
+  console.log("Hello nunjuks....! this is listblog page");
 });
 
 module.exports = router;
