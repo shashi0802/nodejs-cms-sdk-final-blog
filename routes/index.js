@@ -1,14 +1,7 @@
-//Indecation new = *
-// const express = require('express'); //*
+module.exports = function(app) {
 
-// var app = express();                //*
-
-exports.home = require('./home');
-
-exports.faq = require('./faq');
-
-exports.registration = require('./registration');
-
-// exports.ho = app.use('/',exports.home = require('./home'));          //*
-// exports.fa = app.use('/',exports.faq = require('./faq'));           //*
-// exports.reg = app.use('/',exports.registration = require('./registration'));  //*
+    app.use('/', require('../middlewares'));
+    app.use('/', require('./home'));
+    app.use('/faq', require('./faq'));
+    app.use('/registration', require('./registration'));
+  };

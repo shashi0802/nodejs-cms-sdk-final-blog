@@ -1,11 +1,10 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
-const request = require('request-promise');
-var route = require('./routes/index');
+var config = require('./config/default');
 
 var app = express();
 
-port = 8090;
+port = config.port;
 
 app.set('view engine', 'html');
 
@@ -15,10 +14,7 @@ nunjucks.configure('views', {
 
 app.use('/static', express.static('public'))
 
-app.use('/',route.home);
-app.use('/',route.faq);
-app.use('/',route.registration);
-
+require('./routes')(app);
 
 
 app.listen(port, () => {
