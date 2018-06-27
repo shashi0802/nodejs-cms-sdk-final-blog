@@ -1,5 +1,5 @@
 module.exports = exports = {
-    port: 9090,
+    port: 9080,
     // Contentstack Config
     contentstack: {
         api_key: 'blt610d3dc8e04d1ec7',
